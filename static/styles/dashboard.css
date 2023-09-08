@@ -1,0 +1,135 @@
+/* Add your CSS styles here */
+/* You can customize the appearance of your dashboard */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+   background-color: #d5d5d5;
+   
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+
+
+.header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* .container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 0px;
+} */
+
+.task-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: auto;
+    width: 30% ;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-list {
+    margin: auto;
+    margin-top: 1%;
+    width: 50% ;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.create-button,
+.update-button,
+.delete-button,
+.logout-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-button:hover,
+.update-button:hover,
+.delete-button:hover,
+.logout-button:hover {
+    background-color: #0056b3;
+}
+
+.logout-button {
+    margin-top: 10px;
+    margin-left: auto;
+    display: block;
+}
+
+/* Add more styles as needed */
+/* Add/Edit Task Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.close-button {
+    color: #aaa;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='styles/login.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="app">
+        <div class="bg"></div>
+        <form id="login-form">
+            <header>
+                <b><h2>Login</h2></b>
+            </header>
+            <div class="inputs">
+                <input type="text" name="email" id="email" placeholder="username or email" style="font-family: Arial, Helvetica, sans-serif ;border-bottom: 1px solid #6865ff7d; width: 100%; overflow: hidden; font-weight: 600; font-size: 14px; color: #fff;">
+                <input type="password" name="password" id="password" placeholder="password" style="font-family: Arial, Helvetica, sans-serif; border-bottom: 1px solid #6865ff7d; width: 100%; overflow: hidden; font-weight: 600; font-size: 14px; color: #fff;">
+                <p class="light"><a href="#" style="font-family: Arial, Helvetica, sans-serif;color: #fff; ">Forgot password?</a></p>
+            </div>
+            <div class="spacing-container">
+                <button type="submit" class="submit" id="login-button" style="background: linear-gradient(to right, #3498db, #8e44ad); color: #fff; font-weight: bold;">Continue</button>
+                <div id="error-message" class="warning-message"></div>
+            </div>
+            <p style="color: #000000;">Don't have an account? <a href="{{ url_for('get_signup_page') }}" style="color: #ff2828;">Sign Up</a></p>
+        </form>
+    </div>
+    <script src="{{ url_for('static', path='js/login.js') }}"></script>
+</body>
+</html>
+
+

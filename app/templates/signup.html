@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='styles/signup.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <section class="login">
+        <div class="login_box">
+            <div class="left">
+                <div class="top_link">
+                    <a href="/"style="text-decoration: none;">
+                        <i class="fas fa-home" style="font-size: 24px; color: #000;"></i> 
+                        <b style="color: #000;">Home</b>
+                    </a>
+                </div>
+                <div class="contact">
+                    <form id="signup-form">
+                        <h3>SIGN UP</h3>
+                        <input type="text" id="email" name="email" placeholder="Email" required>
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                        <p id="message"></p>
+                        <button type="submit" class="submit">Sign Up</button>
+                        <br>
+                        <p>Already have an account? <a href="{{ url_for('get_login_page') }}">Login Here</a></p>
+                    </form>
+                    
+                </div>
+            </div>
+            <div class="right">
+                <div class="right-text">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="{{ url_for('static', path='js/signup.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='styles/index.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <h2 style="color: #f0f0f0;">TrackTime</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('get_signup_page') }}">Sign Up</a></li>
+                <li><a href="{{ url_for('get_login_page') }}">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-image" style="background-image: url('/static/img/i1.jpg');">
+            <div class="hero-content">
+                <h1>Welcome to the Todo App</h1>
+                <p>Your ultimate task management solution for boosting productivity and staying organized.</p>
+                <a href="{{ url_for('get_signup_page') }}" class="cta-button">Get Started</a>
+            </div>
+        </div>
+        
+        <section class="about">
+            <div class="container">
+                <h2 style="color: #4CAF50;">About Our Todo App</h2>
+                <p>Welcome to the ultimate task management solution – the TrackTime Todo App. Designed with your productivity and organization in mind, our app empowers you to take control of your tasks, priorities, and deadlines.</p>
+                <p>Key highlights of our app include:</p>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Intuitive task management: Effortlessly add, edit, and organize your tasks.</li>
+                    <li><i class="fas fa-check-circle"></i> Priority setting: Mark tasks with varying levels of importance to stay focused.</li>
+                    <li><i class="fas fa-check-circle"></i> Due date tracking: Never miss a deadline with our handy due date reminders.</li>
+                    <li><i class="fas fa-check-circle"></i> Collaborative sharing: Easily share tasks and collaborate with your team or family.</li>
+                </ul>
+                <p>Join our growing community of productive individuals and experience the difference with the Geethan Todo App. Say goodbye to chaos and hello to a more organized and efficient you!</p>
+            </div>
+        </section>
+    
+        
+        <section class="features">
+            <div class="container">
+                <h2>Key Features</h2>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Easy task management</li>
+                    <li><i class="fas fa-check-circle"></i> Priority setting</li>
+                    <li><i class="fas fa-check-circle"></i> Due date tracking</li>
+                    <li><i class="fas fa-check-circle"></i> Collaborative sharing</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="productivity">
+            <div class="container">
+                <div class="productivity-content">
+                    <h2>Boost Your Productivity</h2>
+                    <p>Our app is your all-in-one solution for staying organized, meeting deadlines, and achieving your goals. Join our community of productive individuals today!</p>
+                    <a href="{{ url_for('get_signup_page') }}" class="cta-button">Sign Up Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p class="footer-text">&copy; 2023</p>
+            <p class="footer-text">MIT License</p>
+            <p class="footer-text">Developed with ❤️ by Geethan Developer</p>
+        </div>
+    </footer>
+</body>
+</html>

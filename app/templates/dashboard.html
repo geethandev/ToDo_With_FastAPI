@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', path='styles/dashboard.css') }}">
+</head>
+<body>
+    <header class="header">
+        <h1>Task Dashboard</h1>
+        <button id="logout-button" class="logout-button">Logout</button>
+    </header>
+    <br>
+       <div class="task-form">
+            <h2>Create New Task</h2>
+            <form id="create-task-form">
+                <input type="text" id="task-title" class="task-title" placeholder="Enter task title" required>
+                <button type="submit" class="create-button">Create Task</button>
+            </form>
+        </div>
+        
+        <div class="task-list">
+            <h2>Task List</h2>
+            <ul id="task-list" class="task-items">
+               
+            </ul>
+        </div>
+    </div>
+
+    <div id="edit-task-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="close-edit-modal">&times;</span>
+            <h2>Edit Task</h2>
+            <form id="edit-task-form">
+                <input type="text" id="edited-task-title" class="task-title" placeholder="Edit task title" required>
+                <button type="submit" class="update-button">Update Task</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', path='js/dashboard.js') }}"></script>
+</body>
+</html>
