@@ -19,8 +19,10 @@ This is a simple web application for managing tasks. Users can create, edit, and
 
 ## Prerequisites
 Before you begin, ensure you have met the following requirements:
-- Node.js and npm installed.
-- MongoDB database set up.
+- Python
+- Fast API
+- js 
+- Any database set up. I used SQL Sever.
 - Basic knowledge of web development.
 
 
