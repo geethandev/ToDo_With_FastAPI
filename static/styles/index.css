@@ -68,7 +68,7 @@ section {
     }
 h2 {
     font-size: 2rem;
-    color: #4CAF50;
+    color: #45a049;
     margin-bottom: 20px;
     }
 p {
@@ -99,7 +99,7 @@ ul li i {
     border-radius: 10px;
     }
 .cta-button {
-    background-color: #4CAF50;
+    background-color: #45a049;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -131,3 +131,151 @@ color: #fff;
 padding: 2rem 0;
     }
 
+/* Additional CSS styles for the To-Do app features */
+
+.about {
+    background-image: url('/static/img/i2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+}
+
+
+.section-title {
+    color: #45a049; /* Green color for section title */
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    background-color: #1a1a1a; /* Dark background color */
+    padding: 4rem 0;
+    text-align: center;
+    color: #fff; /* White text color */
+    margin-bottom: 2rem; /* Added margin for space below the section */
+}
+.section-title {
+    font-size: 2.5rem;
+    color:#45a049; /* Green title color */
+    margin-bottom: 2rem;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-text {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.about-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 2rem;
+}
+
+.about-icons i {
+    color:#45a049; /* Green icon color */
+}
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Style the section title */
+.section__title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #45a049;
+}
+
+/* Style the section description */
+.section__desc {
+    color: var(--Grayish-Blue);
+    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+/* Style the individual features */
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.feature {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+}
+
+.feature__icon {
+    font-size: 2rem;
+    color: var(--Red); /* You can adjust the color as needed */
+    margin-bottom: 1rem;
+}
+
+.feature__title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.feature__desc {
+    color: var(--Grayish-Blue);
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+.space-theme {
+    background-color: #000; /* Black background for the space theme */
+    color: #fff; /* White text color for better visibility */
+}
+
+.space-theme .feature {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background for features */
+}
+
+.space-theme .feature__icon {
+    font-size: 2rem;
+    color: #fff; /* White color for icons */
+    margin-bottom: 1rem;
+}
+
+.space-theme .feature__title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    color: #fff; /* White color for feature titles */
+}
+
+.space-theme .feature__desc {
+    color: #ccc; /* Light gray color for feature descriptions */
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
