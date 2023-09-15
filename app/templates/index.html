@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo App</title>
-    <link rel="stylesheet" href="{{ url_for('static', path='styles/index.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-do App</title>
+        <link rel="stylesheet" href="{{ url_for('static', path='styles/index.css') }}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        
+        <!-- Favicon -->
+        <link rel="icon" href="/static/img/logo.png" type="image/x-icon">
+        <link rel="shortcut icon" href="/static/img/logo.png" type="image/x-icon">
+    </head>
 <body>
     <header>
         <div class="brand">
-            <h2 style="color: #f0f0f0;">TrackTime</h2>
+            <h2 style="color: #f0f0f0;" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TrackTime</h2>
         </div>
         <nav>
             <ul>
@@ -21,39 +24,57 @@
         </nav>
     </header>
     <main>
-        <div class="hero-image" style="background-image: url('/static/img/i1.jpg');">
+        <div class="hero-image" style="background-image: url('/static/img/i11.jpg');">
             <div class="hero-content">
-                <h1>Welcome to the Todo App</h1>
+                <h1>Welcome to the To-do App</h1>
                 <p>Your ultimate task management solution for boosting productivity and staying organized.</p>
                 <a href="{{ url_for('get_signup_page') }}" class="cta-button">Get Started</a>
             </div>
         </div>
-        
         <section class="about">
             <div class="container">
-                <h2 style="color: #4CAF50;">About Our Todo App</h2>
-                <p>Welcome to the ultimate task management solution – the TrackTime Todo App. Designed with your productivity and organization in mind, our app empowers you to take control of your tasks, priorities, and deadlines.</p>
-                <p>Key highlights of our app include:</p>
-                <ul>
-                    <li><i class="fas fa-check-circle"></i> Intuitive task management: Effortlessly add, edit, and organize your tasks.</li>
-                    <li><i class="fas fa-check-circle"></i> Priority setting: Mark tasks with varying levels of importance to stay focused.</li>
-                    <li><i class="fas fa-check-circle"></i> Due date tracking: Never miss a deadline with our handy due date reminders.</li>
-                    <li><i class="fas fa-check-circle"></i> Collaborative sharing: Easily share tasks and collaborate with your team or family.</li>
-                </ul>
-                <p>Join our growing community of productive individuals and experience the difference with the Geethan Todo App. Say goodbye to chaos and hello to a more organized and efficient you!</p>
+                <h2 class="section-title">About Our Task Management App</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Welcome to the TrackTime Task Management App, your ultimate solution for staying organized and boosting productivity. Our app is designed with simplicity and efficiency in mind, empowering you to take control of your tasks, priorities, and deadlines.</p>
+                        <p>Whether you're a professional looking to streamline your work or a student managing assignments, TrackTime has you covered. With intuitive features and a user-friendly interface, you can stay on top of your to-do list and accomplish more each day.</p>
+                    </div>
+                    <div class="about-icons">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-clock"></i>
+                        <i class="fas fa-calendar-alt"></i>
+                        <i class="fas fa-users"></i>
+                    </div>
+                </div>
             </div>
         </section>
-    
-        
-        <section class="features">
-            <div class="container">
-                <h2>Key Features</h2>
-                <ul>
-                    <li><i class="fas fa-check-circle"></i> Easy task management</li>
-                    <li><i class="fas fa-check-circle"></i> Priority setting</li>
-                    <li><i class="fas fa-check-circle"></i> Due date tracking</li>
-                    <li><i class="fas fa-check-circle"></i> Collaborative sharing</li>
-                </ul>
+        <section class="space-theme">
+            <h1 class="section__title">
+                Explore the Galaxy of Tasks
+                <span>Stay Organized and Reach for the Stars</span>
+            </h1>
+            <br>
+            <div class="features">
+                <div class="feature feature-one">
+                    <i class="fas fa-tasks feature__icon"></i>
+                    <h2 class="feature__title">Task Management</h2>
+                    <p class="feature__desc">Effortlessly create, update, and delete tasks for better organization.</p>
+                </div>
+                <div class="feature feature-two">
+                    <i class="fas fa-desktop feature__icon"></i>
+                    <h2 class="feature__title">User Interface</h2>
+                    <p class="feature__desc">Intuitive user interface for easy navigation and task management.</p>
+                </div>
+                <div class="feature feature-three">
+                    <i class="fas fa-user-lock feature__icon"></i>
+                    <h2 class="feature__title">Login System</h2>
+                    <p class="feature__desc">Secure login system to access your tasks from anywhere.</p>
+                </div>
+                <div class="feature feature-four">
+                    <i class="fas fa-list-ul feature__icon"></i>
+                    <h2 class="feature__title">Task Lists</h2>
+                    <p class="feature__desc">Organize your tasks into lists for better task management.</p>
+                </div>
             </div>
         </section>
 
