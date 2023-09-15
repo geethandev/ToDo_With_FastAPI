@@ -1,103 +1,163 @@
-/* Add your CSS styles here */
-/* You can customize the appearance of your dashboard */
-
-body {
-    font-family: 'Arial', sans-serif;
+/* Reset some default styles for better consistency */
+* {
     margin: 0;
     padding: 0;
-   background-color: #d5d5d5;
-   
+    box-sizing: border-box;
 }
 
-header {
+/* Body and font styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Header styles */
+.header {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 30px;
+    position: relative; /* Add this */
 }
-
 
 .header h1 {
     font-size: 36px;
     margin: 0;
 }
 
-/* .container {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-    padding: 0px;
-} */
-
-.task-form {
-    background-color: rgba(255, 255, 255, 0.9);
+/* Logout button styles */
+#logout-button {
+    position: absolute;
+    top: 20px; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the right position as needed */
+}
+/* Container styles */
+.container {
     margin: auto;
-    width: 30% ;
-    text-align: center;
+    width: 90%; /* Adjust the width as needed */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Task form styles */
+.task-form {
+    background-color: #fff;
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px; /* Adjust the maximum width as needed */
+    margin: auto; /* Center the form horizontally */
+    margin-bottom: 20px; /* Add some space between the form and the list */
+    margin-top: 20px; /* Add space between the header and the form */
 }
 
-.task-list {
-    margin: auto;
-    margin-top: 1%;
-    width: 50% ;
-    background-color: rgba(255, 255, 255, 0.9);
-    border: 1px solid #ddd;
+.task-form h2 {
+    font-size: 20px;
+}
+
+.task-form input.form-control {
+    width: 100%;
     padding: 10px;
-    border-radius: 12px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    max-height: 500px;
-    overflow-y: auto;
-}
-
-li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    padding: 15px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
 }
 
-.create-button,
-.update-button,
-.delete-button,
-.logout-button {
-    background-color: #007bff;
+.create-button {
+    background-color: #5cb85c;
     color: #fff;
     border: none;
     border-radius: 5px;
     padding: 8px 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-weight: bold;
 }
 
-.create-button:hover,
-.update-button:hover,
-.delete-button:hover,
-.logout-button:hover {
-    background-color: #0056b3;
+.create-button:hover {
+    background-color: #4cae4c;
 }
 
-.logout-button {
-    margin-top: 10px;
-    margin-left: auto;
-    display: block;
+/* Task List Styles */
+.task-list {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px; 
+    margin: auto; 
+    overflow-y: auto; 
+    margin-top: 20px; 
+    position: relative;
 }
 
-/* Add more styles as needed */
-/* Add/Edit Task Modal Styles */
+.task-list-container {
+    max-height: 650px; /* Adjust the maximum height as needed */
+    overflow-y: auto;
+    padding-right: 10px; /* Add some space for the scrollbar */
+}
+
+.task-list h2.fixed {
+    position: sticky;
+    top: 0;
+    background-color: #fff; /* Add a background color if needed */
+    z-index: 1;
+}
+.task-list h2 {
+    position: sticky;
+    top: 0;
+    background-color: #fff; /* Add a background color if needed */
+    z-index: 1;
+}
+
+.card {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.edit-button,
+.delete-button {
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.edit-button:hover,
+.delete-button:hover {
+    background-color: #d39e00;
+}
+
+/* Modal styles */
 .modal {
     display: none;
     position: fixed;
@@ -109,6 +169,7 @@ li {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+/* Modal content styles */
 .modal-content {
     background-color: #fff;
     margin: 15% auto;
@@ -119,6 +180,7 @@ li {
     position: relative;
 }
 
+/* Close button styles */
 .close-button {
     color: #aaa;
     font-size: 20px;
@@ -132,4 +194,17 @@ li {
 .close-button:focus {
     color: black;
     text-decoration: none;
+}
+
+/* Optional: Style the scrollbar */
+.task-list::-webkit-scrollbar {
+    width: 10px;
+}
+
+.task-list::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+.task-list::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
 }

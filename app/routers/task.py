@@ -7,7 +7,7 @@ from sqlalchemy.orm import Session
 from starlette.requests import Request
 from starlette.responses import HTMLResponse
 
-from .. import models, schemas
+from .. import models, schemas,main
 from ..database import get_db
 from ..routers import auth
 
@@ -18,8 +18,9 @@ def get_templates():
     return Jinja2Templates(directory="app/templates")
 
 @router.get("/dashboard/", response_class=HTMLResponse)
-async def get_dashboard_page(request: Request, templates: Jinja2Templates = Depends(get_templates)):  # Inject templates
+async def get_dashboard_page(request: Request, templates: Jinja2Templates = Depends(get_templates)):
     return templates.TemplateResponse("dashboard.html", {"request": request})
+      
 
 # get task by limit
 @router.get("/task/",response_model = List[schemas.TaskResponse])
