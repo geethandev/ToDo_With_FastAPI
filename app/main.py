@@ -10,6 +10,7 @@ from app.database import engine
 from app import models, schemas
 from app.routers import auth, task, user
 
+
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
