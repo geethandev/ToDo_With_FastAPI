@@ -15,6 +15,13 @@ from config import settings
 from .. import main, models, schemas, utils
 from ..database import get_db
 
+
+''' 
+    This router handles all the auth operations such as by 
+    by creating user handling jwt token and verifying     
+'''
+
+
 router = APIRouter(
     tags=['authentication']
 )

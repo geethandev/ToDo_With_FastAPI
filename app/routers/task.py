@@ -11,6 +11,12 @@ from .. import models, schemas,main
 from ..database import get_db
 from ..routers import auth
 
+        
+'''     This router handles all the task 
+        related features such as create a task ,
+        delete a task , update and get the task 
+'''
+
 router = APIRouter(
     tags=['tasks']
 )  

@@ -8,6 +8,11 @@ from starlette.responses import HTMLResponse
 from .. import models, schemas, utils
 from ..database import get_db
 
+''' 
+    This user.py handels all the user related routes 
+    such as signup 
+'''
+    
 router = APIRouter(
     prefix = '/signup',
     tags=['users']
@@ -40,4 +45,6 @@ def create_user(user: schemas.CreateUser, db: Session = Depends(get_db)):
             raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail='Email already exists. Please use another email.')
         else:
             raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
+        
+
         

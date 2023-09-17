@@ -4,6 +4,13 @@ from sqlalchemy.orm import sessionmaker
 
 from config import settings
 
+
+'''
+    this file handles all the database setup , 
+    creating engin , defining getdb func
+    
+'''
+
 SQLALCHEMY_DATABASE_URL = f"mssql+pyodbc://{settings.database_server}/{settings.database_name}?trusted_connection=yes&driver=ODBC+Driver+17+for+SQL+Server"
 
 
